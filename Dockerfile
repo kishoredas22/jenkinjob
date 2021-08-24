@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
-FROM java:8  
-COPY . /var/www/java  
-WORKDIR /var/www/java  
+FROM openjdk:8 
+COPY . /src/java  
+WORKDIR /srcjava  
 RUN javac Hello.java  
 CMD ["java", "Hello"]  
