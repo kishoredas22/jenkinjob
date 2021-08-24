@@ -2,5 +2,5 @@
 FROM openjdk:8 
 COPY . /src/java  
 WORKDIR /srcjava  
-RUN javac Hello.java  
-CMD ["java", "Hello"]  
+RUN javac HelloWorld.java  
+CMD ["java", "HelloWorld"]  
